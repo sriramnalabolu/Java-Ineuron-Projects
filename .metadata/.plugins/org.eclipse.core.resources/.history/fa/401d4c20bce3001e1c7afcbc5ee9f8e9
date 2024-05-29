@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Details</title>
+</head>
+<body>
+    <h1 style="color:red; text-align:center;">Employee Registration Details</h1>
+    <table border="1" align="center">
+        <tr><th>EID</th><td th:text="${eid}"></td></tr>
+        <tr><th>ENAME</th><td th:text="${ename}"></td></tr>
+        <tr><th>EAGE</th><td th:text="${eage}"></td></tr>
+        <tr><th>EMAIL</th><td th:text="${email}"></td></tr>
+        <tr><th>MOBILE</th><td th:text="${mobile}"></td></tr>
+        <tr><th>STATUS</th><td th:text="${status}"></td></tr>
+    </table>
+</body>
+</html>

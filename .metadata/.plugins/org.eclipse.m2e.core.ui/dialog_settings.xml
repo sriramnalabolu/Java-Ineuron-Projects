@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\nalab\eclipse-workspace\SpringMavenProject"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Core\Spring1"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\Operators and Loops\21_10_22_Methods_Stack_Heap_Areas"/>
+			<item value="C:\Users\nalab\Documents\JavaEclipse"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="in.ineuron"/>
+			<item value="com.lco.controller"/>
+			<item value="org.WishWebModule"/>
+		</list>
+		<list key="groupId">
+			<item value="ineuron"/>
+			<item value="lco"/>
+		</list>
+		<list key="artifactId">
+			<item value="DAOProject1-Xml-JdbcTemplateDirectMethods"/>
+			<item value="Log4j-01"/>
+			<item value="WishWebModule"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+			<item value="1.2"/>
+			<item value="1.0"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj17-DAOUsingSimpleJdbcCallApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj16-DAOUsingNamedJdbcTemplate"/>
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj15-DAOUsingJDBCTemplateCallBackMethods"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\8.Spring JDBC\08-04-23\SpringSourceCode_08_04_2023\BootProj15-DAOUsingJDBCTemplateCallBackMethods"/>
+			<item value="C:\Users\nalab\eclipse-workspace\MavenMultiModule"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Maven Programs\ServletJSPJDBCApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\WishApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Hibernate-02"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Hibernate-01"/>
+			<item value="C:\Users\nalab\eclipse-workspace\MavenProj1"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SpringMavenProject"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SwapDemoApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj03-DependancyInjection\BootProj03-DependancyInjection"/>
+			<item value="C:\Users\nalab\Downloads\BootProj02-DependencyInjection\BootProj02-DependencyInjection"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="WishWebModule"/>
+			<item value="WishWebApp"/>
+			<item value="WishServiceModule"/>
+			<item value="MavenMultiModule"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="450"/>
+		<item key="x" value="731"/>
+		<item key="y" value="203"/>
+	</section>
+</section>

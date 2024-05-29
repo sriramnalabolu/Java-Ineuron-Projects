@@ -1,0 +1,18 @@
+package com.employee.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import com.employee.dto.Employee;
+import com.employee.repository.EmployeeRepository;
+
+@Repository
+public class EmployeeDaoImpl implements EmployeeDao {
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
+    @Override
+    public Employee addEmployee(Employee employee) {
+        return employeeRepository.save(employee);
+    }
+}

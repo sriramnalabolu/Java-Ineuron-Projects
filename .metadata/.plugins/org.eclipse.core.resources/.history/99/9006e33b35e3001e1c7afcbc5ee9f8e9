@@ -1,0 +1,15 @@
+
+package com.employee.Application;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.employee.controller.ComponentScan;
+
+@ComponentScan(basePackages = {"com.example.controller"})
+@SpringBootApplication
+public class EmployeeRegistrationApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(EmployeeRegistrationApplication.class, args);
+    }
+}

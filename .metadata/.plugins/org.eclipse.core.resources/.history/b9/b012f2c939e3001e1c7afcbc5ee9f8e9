@@ -1,0 +1,54 @@
+package com.employee.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.employee.dao.EmployeeDao;
+import com.employee.dto.Employee;
+
+@Controller
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeDao employeeDao;
+    
+    @GetMapping("/")
+    public String index() {
+        return "index";
+    }
+
+    @PostMapping("/reg")
+    public ModelAndView registerEmployee(
+            @RequestParam("eid") String eid,
+            @RequestParam("ename") String ename,
+            @RequestParam("eage") int eage,
+            @RequestParam("email") String email,
+            @RequestParam("mobile") String mobile) {
+    	
+    	System.out.println("coming to /reg");
+    	
+        Employee employee = new Employee();
+        employee.setEid(eid);
+        employee.setEname(ename);
+        employee.setEage(eage);
+        employee.setEmail(email);
+        employee.setMobile(mobile);
+
+        String status = employeeDao.insert(employee);
+
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("eid", eid);
+        mav.addObject("ename", ename);
+        mav.addObject("eage", eage);
+        mav.addObject("email", email);
+        mav.addObject("mobile", mobile);
+        mav.addObject("status", status);
+        mav.setViewName("registrationResult");
+        
+        return mav;
+    }
+}

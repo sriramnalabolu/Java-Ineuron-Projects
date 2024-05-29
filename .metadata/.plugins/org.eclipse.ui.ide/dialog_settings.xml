@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+		</section>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\nalab\eclipse-workspace\MavenProj1"/>
+			<item value="C:\Users\nalab\eclipse-workspace\MathProj1"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Boot Programs\BootProj03-DependancyInjection"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Boot07-InjectionAnyTypeforSpringBeanAppusingYML"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Boot06-InjectionAnyTypeforSpringBeanApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Boot Programs\SpringTestApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Boot05-ValueAnnotationApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Boot04-BulkLoadingApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj03-DependancyInjection"/>
+			<item value="C:\Users\nalab\eclipse-workspace\BootProj02-DependancyInjection"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-29-RealTimeDI-100%SpringAnnotationsCRUDAPP"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-28-100%SpringBeanConfigurationApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-27-SpringBeanLifeCycleActionApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-26-Spring@SteroTypeAnnotation"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-25-RealTimeDI-SteroAnnotationsandPropertiesFileApproach"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-24-Spring@AutowiredatConstructorApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-23-Spring@AutowiredAppInstanceandSetterApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-22-Spring@RequiredAnnotation"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-21-SpringPnameSpaceandCnameSpace"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-20-Springi18NApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-19-AutowiringinXMLUsingByConstructorApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Core Programs - nitin\RealTime-DI-Approach"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-18-AutowiringinXMLUsingByNameandByTypeApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-17-BeanAlliasApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-16-CollectionMergingApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-15-RealTimeDI-UsingXMLPropertiesBeanInheritanceApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-14-SpringBeanInheritanceApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-13-SpringNullInjectionApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-12-RealTimeDI-UsingXMLandPropertiesFileApproach"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-11-SpringCollectionInjectionApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-10-SpringBeanID"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-09-SpringBeanScope"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-08-SpringBeanScope"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-07-RealTimeDI-UsingXMLandPropertiesFileApproach"/>
+			<item value="C:\Users\nalab\eclipse-workspace\IOCProject-06-RealTimeDI-UsingXML"/>
+			<item value="C:\Users\nalab\eclipse-workspace\CircularDependancyInjectionApp-05"/>
+			<item value="C:\Users\nalab\eclipse-workspace\RealTime-DI-Approach"/>
+			<item value="C:\Users\nalab\eclipse-workspace\ConstructorInjection-04"/>
+			<item value="C:\Users\nalab\eclipse-workspace\ConstructorSetterInjection-03"/>
+			<item value="C:\Users\nalab\eclipse-workspace\ConstructorInjection-02"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SetterInjection-0101"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SetterInjection-01"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Core\03-SpringAppAnnotation"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Core\02-SpringApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-40-HibernateCollectionMapping"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-39-HibernateInheritanceTCC"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-38-HibernateInheritanceTSC"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-37-HibernateInheritanceSingleTable"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-36-HibernateComponentMapping"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-34-PaginationApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-33-HibernateHQLPagination"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-32-HibernateSoftDeletionApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-31-HibernateFilterApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JspServletHibernateMVCCrudApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-30-CriterianAPI"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-29-StoredProcedureApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-29-NamedNativeSQLQueryApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Hibernate Programs\HB-25-HQLAPP"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Hibernate Programs\HB-27-HQLInsertQuery"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Hibernate Programs\HB-25-HQLSelectAPP"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-28-NativeSQLQueryApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\ServletJspHibernateMVCCrudApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-27-HQLInsertQuery"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-26-HQLNonSelectApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HB-25-HQLSelectAPP"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JSTLApp-001"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Spring Core\Spring1"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JSP Programs\JSPELApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JSTLApp-01"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JSPELApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JspScopeApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JspCustomAction-2"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JspCustomAction-01"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\20_02_23_\JSPSourceCode_20_02_2023\JspCustomAction-01"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HtmlJspDBApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\JSP Programs\HtmlJspDBApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Employee Application"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\HttpServletWrapperResponseApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\ValidationFilterApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\ServletRequestAttributeListenerApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\ServletRequestListenerApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\RequestWrapperApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\FilterChainingApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\FilterApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\WelcomeFileApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Servlet Programs\URLPatternTypesApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\HiddenFormFieldApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\URLReWritingApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\WebApplication"/>
+			<item value="C:\Users\nalab\eclipse-workspace\CookieSessionTrackingApp"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\02_02_23\Servlet_source_code_02_02_2023\JDBCCRUDAPP"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\02_02_23\Servlet_source_code_02_02_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\01_02_23_ServletContext vs ServletConfig_LoadOnStartupWays_SnippetsMultithreading\ServletSourceCode_01_02_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\31_01_23_HttpServletRequest vs HttpServletResponse_ServletConfig_ServletConnectingToDatabase"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\31_01_23_HttpServletRequest vs HttpServletResponse_ServletConfig_ServletConnectingToDatabase\ServletSourceCode_31_01_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\3.Servlets\30_01_23_ServletUsingJDBC_JDBCCRUDProject\JDBCCrudApp"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\JDBC Project\JDBCCrudApp"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\28_01_23_Class5\JDBC_Source_code_23_01_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\20_01_23_Class4\JDBCSourceCode_20_01_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\19_01_23_Class3\JDBCSourceCode_19_01_2023\JdbcScrollableResultSet"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\19_01_23_Class3\JDBCSourceCode_19_01_2023\JDBCCrudApp"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\19_01_23_Class3\JDBCSourceCode_19_01_2023"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\18_01_23_Class2\JDBCSourceCode_18_01_2023\JDBCCrudApp"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron\3.Advanced Java\2.JDBC Advance\18_01_23_Class2\JDBCSourceCode_18_01_2023\JDBCBatchUpdate"/>
+			<item value="C:\Users\nalab\Documents\Important Docs\Java Ineuron"/>
+			<item value="C:\Users\nalab\Documents\HW5_Prasanth_Sagar_Talluru_700734537.zip"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1662517902618"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="619"/>
+		<item key="DIALOG_Y_ORIGIN" value="94"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="645"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="false"/>
+		<item key="TOGGLE_SELECTED" value="true"/>
+		<item key="DIALOG_WIDTH" value="662"/>
+		<item key="DIALOG_HEIGHT" value="529"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

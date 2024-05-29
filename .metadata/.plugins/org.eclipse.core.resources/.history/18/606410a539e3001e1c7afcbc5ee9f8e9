@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Result</title>
+</head>
+<body>
+    <h1>Employee Registration Result</h1>
+    <p>Employee ID: [[${eid}]]</p>
+    <p>Employee Name: [[${ename}]]</p>
+    <p>Employee Age: [[${eage}]]</p>
+    <p>Email: [[${email}]]</p>
+    <p>Mobile: [[${mobile}]]</p>
+    <p>Status: [[${status}]]</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+class Student{
+	public Student(){
+		System.out.println("yes");
+	}
+}
+
+public class Test {
+		public static void main(String[] args) throws Exception {
+		
+		String className = args[0];
+		//Load the class file explicitly
+		Class c = Class.forName(className);
+		
+		Object obj=c.newInstance();
+		
+		//Perform type casting to get Student Object
+		Student std = (Student)obj;
+		System.out.println(std);
+	}
+}

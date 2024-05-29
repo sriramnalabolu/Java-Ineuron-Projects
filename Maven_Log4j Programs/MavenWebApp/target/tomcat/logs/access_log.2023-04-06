@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [06/Apr/2023:21:24:30 +0530] "GET /WishMsgApp/ HTTP/1.1" 200 210 http-bio-9999-exec-3 1361
+0:0:0:0:0:0:0:1 - - [06/Apr/2023:21:24:31 +0530] "GET /WishMsgApp/wish HTTP/1.1" 200 255 http-bio-9999-exec-5 70

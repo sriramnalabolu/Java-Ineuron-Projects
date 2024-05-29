@@ -1,0 +1,48 @@
+package com.employee.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import com.employee.dao.EmployeeDao;
+import com.employee.dto.Employee;
+
+@RestController
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeDao employeeDao;
+
+    @PostMapping("/register")
+    public String registerEmployee(
+            @RequestParam("eid") String eid,
+            @RequestParam("ename") String ename,
+            @RequestParam("eage") int eage,
+            @RequestParam("email") String email,
+            @RequestParam("mobile") String mobile) {
+
+        Employee employee = new Employee();
+        employee.setEid(eid);
+        employee.setEname(ename);
+        employee.setEage(eage);
+        employee.setEmail(email);
+        employee.setMobile(mobile);
+
+        String status = employeeDao.insert(employee);
+
+        StringBuilder htmlResponse = new StringBuilder();
+        htmlResponse.append("<html><head><title>Employee Registration Details</title></head>");
+        htmlResponse.append("<body><center>");
+        htmlResponse.append("<h1 style='color:red; text-align:center;'>Employee Registration Details</h1>");
+        htmlResponse.append("<table border='1'>");
+        htmlResponse.append("<tr><th>EID</th><td>").append(eid).append("</td></tr>");
+        htmlResponse.append("<tr><th>ENAME</th><td>").append(ename).append("</td></tr>");
+        htmlResponse.append("<tr><th>EAGE</th><td>").append(eage).append("</td></tr>");
+        htmlResponse.append("<tr><th>EMAIL</th><td>").append(email).append("</td></tr>");
+        htmlResponse.append("<tr><th>MOBILE</th><td>").append(mobile).append("</td></tr>");
+        htmlResponse.append("<tr><th>STATUS</th><td>").append(status).append("</td></tr>");
+        htmlResponse.append("</table></center></body></html>");
+
+        return htmlResponse.toString();
+    }
+}

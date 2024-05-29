@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+   	<bean id="java" class="ai.neuron.beans.JavaCourse"></bean>
+   	
+   	<bean id="sql" class="ai.neuron.beans.SQLCourse"></bean>
+    
+   	<bean id="python" class="ai.neuron.beans.PythonCourse"></bean>
+  
+	<bean id="courseS" class="ai.neuron.beans.CourseSelection">
+  		<property name="course" ref="python"></property>
+  	</bean>
+
+</beans>

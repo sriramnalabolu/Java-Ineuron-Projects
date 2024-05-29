@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <h2>Employee Registration Form</h2>
+    <form action="/reg" method="post">
+        <label for="eid">Employee ID:</label>
+        <input type="text" name="eid" id="eid" required>
+        <br>
+
+        <label for="ename">Employee Name:</label>
+        <input type="text" name="ename" id="ename" required>
+        <br>
+
+        <label for="eage">Employee Age:</label>
+        <input type="number" name="eage" id="eage" min="18" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" name="mobile" id="mobile" required>
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+    <br>
+
+    <p th:if="${status != null}">**Registration Status:** {{status}}</p>
+
+</body>
+</html>

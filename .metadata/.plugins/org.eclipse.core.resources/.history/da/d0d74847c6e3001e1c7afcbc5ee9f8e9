@@ -1,0 +1,52 @@
+package com.employee.controller;
+
+import com.employee.dao.EmployeeDao;
+import com.employee.dto.Employee;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeDao employeeDao;
+
+//    @GetMapping("/")
+//    public String index() {
+//        return "index"; // Return the name of your HTML/Thymeleaf template file (without the extension)
+//    }
+
+    @PostMapping("/reg")
+    public String registerEmployee(
+            @RequestParam("eid") String eid,
+            @RequestParam("ename") String ename,
+            @RequestParam("eage") int eage,
+            @RequestParam("email") String email,
+            @RequestParam("mobile") String mobile,
+            Model model) {
+
+        Employee employee = new Employee();
+        employee.setEid(eid);
+        employee.setEname(ename);
+        employee.setEage(eage);
+        employee.setEmail(email);
+        employee.setMobile(mobile);
+
+        String status = employeeDao.insert(employee);
+
+        // Add data to the model to be passed to the Thymeleaf template
+        model.addAttribute("eid", eid);
+        model.addAttribute("ename", ename);
+        model.addAttribute("eage", eage);
+        model.addAttribute("email", email);
+        model.addAttribute("mobile", mobile);
+        model.addAttribute("status", status);
+
+        // Return the name of your Thymeleaf template file (without the extension)
+        return "registration";
+    }
+}
