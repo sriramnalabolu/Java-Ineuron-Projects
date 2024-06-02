@@ -1,0 +1,4 @@
+2024-06-01 15:44:43 DEBUG   in.ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 0 18  Control entering main()
+2024-06-01 15:44:46 INFO   in.ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 3053 31  Connection established succesfully
+2024-06-01 15:44:46 DEBUG   in.ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 3069 34  Statement object created
+2024-06-01 15:44:46 INFO   in.ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 3104 38  ResultSet object created by executing query

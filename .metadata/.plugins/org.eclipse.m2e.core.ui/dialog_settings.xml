@@ -91,6 +91,13 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\nalab\eclipse-workspace\Log4j-02"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Log4j-01"/>
+			<item value="C:\Users\nalab\eclipse-workspace\03Spring-Web-MVC-1\03Spring-Web-MVC-1"/>
+			<item value="C:\Users\nalab\eclipse-workspace\02Spring-Web-MVC\02Spring-Web-MVC"/>
+			<item value="C:\Users\nalab\eclipse-workspace\01-SpringWebMVC"/>
+			<item value="C:\Users\nalab\eclipse-workspace\01-SpringWebMVC\01-SpringWebMVC"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Maven_Log4j Programs\Log4j-02"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootProj17-DAOUsingSimpleJdbcCallApp"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootProj16-DAOUsingNamedJdbcTemplate"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootProj15-DAOUsingJDBCTemplateCallBackMethods"/>
@@ -99,12 +106,6 @@
 			<item value="C:\Users\nalab\eclipse-workspace\Maven Programs\ServletJSPJDBCApp"/>
 			<item value="C:\Users\nalab\eclipse-workspace\WishApp"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Hibernate-02"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Hibernate-01"/>
-			<item value="C:\Users\nalab\eclipse-workspace\MavenProj1"/>
-			<item value="C:\Users\nalab\eclipse-workspace\SpringMavenProject"/>
-			<item value="C:\Users\nalab\eclipse-workspace\SwapDemoApp"/>
-			<item value="C:\Users\nalab\eclipse-workspace\BootProj03-DependancyInjection\BootProj03-DependancyInjection"/>
-			<item value="C:\Users\nalab\Downloads\BootProj02-DependencyInjection\BootProj02-DependencyInjection"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

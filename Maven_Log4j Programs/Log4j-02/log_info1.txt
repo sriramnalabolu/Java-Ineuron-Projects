@@ -1,0 +1,6 @@
+2024-05-29 19:12:06 DEBUG ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 0 23 Control entering main()
+2024-05-29 19:12:06 DEBUG ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 11 31 Driver Loaded succesfully
+2024-05-29 19:12:09 INFO ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 2770 37 Connection established succesfully
+2024-05-29 19:12:09 DEBUG ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 2782 40 Statement object created
+2024-05-29 19:12:09 INFO ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 2810 44 ResultSet object created by executing query
+2024-05-29 19:12:09 DEBUG ineuron.JdbcApp       main in.ineuron.JdbcApp.main() 2817 85 Control exiting main()
