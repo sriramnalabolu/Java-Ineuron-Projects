@@ -1,11 +1,11 @@
-#Sat Jun 01 17:19:41 CDT 2024
+#Sun Jun 02 15:38:45 CDT 2024
 a=finishWizard
 c=0
 cl=org.eclipse.m2e.core.ui.internal.wizards.MavenImportWizard
 cmp=usage
 ct=jbt
-d=1717280381009
+d=1717360725695
 l=Wizard class name
-s=3
+s=2
 v=2.2.400
 vl=How many times the 'Finish' button pressed during the day

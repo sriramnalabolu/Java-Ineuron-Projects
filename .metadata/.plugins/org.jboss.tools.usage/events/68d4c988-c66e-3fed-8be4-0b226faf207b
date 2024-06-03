@@ -1,10 +1,10 @@
-#Sat Jun 01 14:20:28 CDT 2024
+#Sun Jun 02 14:20:27 CDT 2024
 a=finishWizard
 c=0
 cl=org.hibernate.eclipse.console.wizards.ConsoleConfigurationCreationWizard
 cmp=usage
 ct=jbt
-d=1717269628469
+d=1717356027487
 l=Wizard class name
 s=0
 v=2.2.400
