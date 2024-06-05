@@ -1,3 +1,12 @@
-2023-04-14 22:58:00 INFO  Started BootLoggingUsingLog4jApplication in 1.153 seconds (JVM running for 2.39)
-2023-04-14 22:58:00 INFO  Course content is choosen :: 1.HTML 2.CSS 3.JavaScript
-2023-04-14 22:58:00 INFO  Course price is ready :: 500.0
+2024-06-04 18:53:24 INFO  Started BootLoggingUsingLog4jApplication in 1.851 seconds (JVM running for 3.441)
+2024-06-04 18:53:24 DEBUG Application availability state LivenessState changed to CORRECT
+2024-06-04 18:53:24 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-06-04 18:53:24 DEBUG control entering inside Student :: preparation(,)
+2024-06-04 18:53:24 DEBUG control entering inside UICourseMaterial :: courseContent
+2024-06-04 18:53:24 INFO  Course content is choosen :: 1.HTML 2.CSS 3.JavaScript
+2024-06-04 18:53:24 INFO  Course price is ready :: 500.0
+2024-06-04 18:53:24 DEBUG control exiting from Student :: prepartion(,)
+2024-06-04 18:53:24 DEBUG Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@50029372, started on Tue Jun 04 18:53:23 CDT 2024
+2024-06-04 18:53:24 DEBUG Stopping beans in phase -2147483647
+2024-06-04 18:53:24 DEBUG Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-06-04 18:53:24 DEBUG Unregistering JMX-exposed beans on shutdown

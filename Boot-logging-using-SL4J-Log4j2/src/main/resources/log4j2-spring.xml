@@ -1,22 +1,22 @@
 <Configuration >
     <Appenders>
-      <RollingFile
-    name="rollingFile"
-    fileName="app_msg.log"
-    filePattern="app_msg.%d{yyyy-MM-dd-hh-mm}.log.gz"
-    ignoreExceptions="false">
-    <PatternLayout>
-        <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
-    </PatternLayout>
-    <Policies>
-        <TimeBasedTriggeringPolicy  filePattern="app_msg.%d{yyyy-MM-dd-hh-mm}.log.gz"  />
-    </Policies>
-    <DefaultRolloverStrategy max="5" />
-</RollingFile>
-</Appenders>
- <Loggers>
-        <Root level="info">
+    	<RollingFile
+		    name="rollingFile"
+		    fileName="app_msg.log"
+		    filePattern="app_msg.%d{yyyy-MM-dd-hh-mm}.log.gz"
+		    ignoreExceptions="false">
+		    <PatternLayout>
+		        <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+		    </PatternLayout>
+		    <Policies>
+		        <SizeBasedTriggeringPolicy size="5kb" />
+		    </Policies>
+		    <DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+ 	<Loggers>
+        <Root level="DEBUG">
             <AppenderRef ref="rollingFile"/>
         </Root>
-    </Loggers>
+  	</Loggers>
 </Configuration>
