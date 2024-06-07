@@ -1,5 +1,6 @@
 package in.ineuron;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,18 +15,19 @@ public class DaoSpringDataJpa01Application {
 		ApplicationContext factory = SpringApplication.run(DaoSpringDataJpa01Application.class, args);
 		ICoronaVaccineMgmtService service = factory.getBean(ICoronaVaccineMgmtService.class);
 
-		/*
-		 * service.fetchDetails(true, "price", "name") .forEach((vaccine) ->
-		 * System.out.println(vaccine.getPrice() + " == " + vaccine.getCountry()));
-		 */
-
-		/*
-		 * service.fetchDetailsByPageNo(2, 3, true, "price", "name") .forEach((vaccine)
-		 * -> System.out.println(vaccine.getName()+" "+vaccine.getPrice() + " " +
-		 * vaccine.getCountry()));
-		 */
-
 		service.fetchDetailsByPagination(3);
 		((ConfigurableApplicationContext) factory).close();
+		
+		
+		/*
+		 * service.fetchDetailsByPageNo(2, 3, true, "price", "name") .forEach((vaccine)
+		 * -> System.out.println(vaccine.getName() + " " + vaccine.getPrice() + " " +
+		 * vaccine.getCountry()));
+		 * 
+		 * service.fetchDetails(true, "price", "name") .forEach((vaccine) ->
+		 * System.out.println(vaccine.getPrice() + " == " + vaccine.getName()));
+		 */
+
+		
 	}
 }

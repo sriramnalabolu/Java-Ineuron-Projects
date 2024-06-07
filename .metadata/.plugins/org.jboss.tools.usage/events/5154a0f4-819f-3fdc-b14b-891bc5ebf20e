@@ -1,10 +1,10 @@
-#Thu Jun 06 08:11:53 CDT 2024
+#Fri Jun 07 08:16:30 CDT 2024
 a=finishWizard
 c=0
 cl=org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard
 cmp=usage
 ct=jbt
-d=1717679513605
+d=1717766190578
 l=Wizard class name
 s=0
 v=2.2.400

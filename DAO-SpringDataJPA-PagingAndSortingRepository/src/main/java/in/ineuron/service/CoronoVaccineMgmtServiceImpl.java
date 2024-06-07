@@ -18,22 +18,6 @@ public class CoronoVaccineMgmtServiceImpl implements ICoronaVaccineMgmtService {
 	private ICoronaVaccineRepo repo;
 
 	@Override
-	public Iterable<CoronaVaccine> fetchDetails(boolean asc, String... properties) {
-		System.out.println("Proxy class implementation name is :: " + repo.getClass().getName());
-		Sort sort = Sort.by(asc ? Direction.ASC : Direction.DESC, properties);
-		Iterable<CoronaVaccine> listEntities = repo.findAll(sort);
-		return listEntities;
-	}
-
-	@Override
-	public Iterable<CoronaVaccine> fetchDetailsByPageNo(int pageNo, int pageSize, boolean asc, String... properties) {
-
-		Pageable pageable = PageRequest.of(pageNo, pageSize, asc ? Direction.ASC : Direction.DESC, properties);
-		Page<CoronaVaccine> page = repo.findAll(pageable);
-		return page.getContent();
-	}
-
-	@Override
 	public void fetchDetailsByPagination(int pageSize) {
 
 		// total record count
@@ -50,6 +34,24 @@ public class CoronoVaccineMgmtServiceImpl implements ICoronaVaccineMgmtService {
 			page.getContent().forEach(System.out::println);
 			System.out.println("-------------------" + (i + 1) + " of :: " + page.getTotalPages());
 		}
+	
+	
+	/*
+	 * @Override public Iterable<CoronaVaccine> fetchDetails(boolean asc, String...
+	 * properties) { System.out.println("Proxy class implementation name is :: " +
+	 * repo.getClass().getName()); Sort sort = Sort.by(asc ? Direction.ASC :
+	 * Direction.DESC, properties); Iterable<CoronaVaccine> listEntities =
+	 * repo.findAll(sort); return listEntities; }
+	 * 
+	 * @Override public Iterable<CoronaVaccine> fetchDetailsByPageNo(int pageNo, int
+	 * pageSize, boolean asc, String... properties) {
+	 * 
+	 * Pageable pageable = PageRequest.of(pageNo, pageSize, asc ? Direction.ASC :
+	 * Direction.DESC, properties); Page<CoronaVaccine> page =
+	 * repo.findAll(pageable); return page.getContent(); }
+	 */
+
+	
 
 	}
 }

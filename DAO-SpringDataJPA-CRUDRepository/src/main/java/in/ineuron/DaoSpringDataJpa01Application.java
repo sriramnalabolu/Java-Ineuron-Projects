@@ -2,6 +2,7 @@ package in.ineuron;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,10 +19,16 @@ public class DaoSpringDataJpa01Application {
 		ApplicationContext factory = SpringApplication.run(DaoSpringDataJpa01Application.class, args);
 		ICoronaVaccineMgmtService service = factory.getBean(ICoronaVaccineMgmtService.class);
 		
-		System.out.println("Checking for availability for the id::3 is => " + service.checkAvailablityByRegNo(3L));
-		System.out.println("Total no of vaccine count is :: " + service.getVaccineCount());
+		System.out.println(service.removeVaccineById(3L));
 		
-		((ConfigurableApplicationContext) factory).close();
+		CoronaVaccine vaccine = new CoronaVaccine(4L, "moderena", "moderena", "USA",455.8, 2);
+		System.out.println(service.removeVaccineByObject(vaccine));
+
+		List<Long> list = new ArrayList<Long>();
+		list.add(1L);
+		list.add(2L);
+		System.out.println(service.removeVaccinesById(list));
+
 		
 
 		/*
@@ -29,7 +36,12 @@ public class DaoSpringDataJpa01Application {
 		 * "IND", 750.0, 2); System.out.println(service.registerVacine(vaccine));
 		 */
 
-		
+		/*
+		 * System.out.println("Checking for availability for the id::3 is => " +
+		 * service.checkAvailablityByRegNo(3L));
+		 * System.out.println("Total no of vaccine count is :: " +
+		 * service.getVaccineCount());
+		 */
 
 		/*
 		 * List<CoronaVaccine> vaccines = new ArrayList<CoronaVaccine>();
@@ -41,27 +53,31 @@ public class DaoSpringDataJpa01Application {
 		 * System.out.println(vaccine.getRegNo()));
 		 */
 
-		// service.fetchAllDetails().forEach(System.out::println);
+		//service.fetchAllDetails().forEach(System.out::println);
 
 		/*
 		 * List<Long> ids = new ArrayList<Long>(); ids.add(1L); ids.add(2L);
-		 * ids.add(3L); Iterable<CoronaVaccine> records =
-		 * service.fetchAllDetailsByID(ids);
-		 * records.forEach(vaccine->System.out.println(vaccine));
+		 * ids.add(3L);
+		 * 
+		 * Iterable<CoronaVaccine> records = service.fetchAllDetailsByID(ids);
+		 * records.forEach(vaccine -> System.out.println(vaccine));
+		 * 
+		 * 
+		 * ((ConfigurableApplicationContext) factory).close();
 		 */
 
 		/*
 		 * Optional<CoronaVaccine> optional = service.fecthVaccineById(3L); if
-		 * (optional.isPresent()) System.out.println(optional.get());
+		 * (optional.isPresent()) { System.out.println(optional.get()); }
 		 * optional.orElseThrow(() -> new IllegalArgumentException("record not found"));
 		 * 
 		 * System.out.println(service.fecthVaccineById(10L).orElse(new
 		 * CoronaVaccine()));
-		 * System.out.println(service.fecthVaccineById(6L).orElseGet(()->new
+		 * System.out.println(service.fecthVaccineById(6L).orElseGet(() -> new
 		 * CoronaVaccine()));
 		 */
 
-		// System.out.println(service.removeVaccineById(3L));
+		
 
 		/*
 		 * CoronaVaccine vaccine = new CoronaVaccine(3L, "pyzer", "pyzwer", "USA",
