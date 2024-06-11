@@ -91,6 +91,13 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-DateTimeInsertionAPI"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp-dynamicprojection"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-StoredProcedureApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp-staticprojection"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-JpaRepositor"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp"/>
+			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-PagingAndSortingRepository"/>
 			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CRUDRepository"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Boot-logging-using-SL4J-Log4j2"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Boot-logging-using-Log4j"/>
@@ -99,13 +106,6 @@
 			<item value="C:\Users\nalab\eclipse-workspace\05-SpringWebMVC"/>
 			<item value="C:\Users\nalab\eclipse-workspace\04-SpringWebMVC"/>
 			<item value="C:\Users\nalab\eclipse-workspace\SpringORMUsingXML-01"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Log4j-03"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Log4j-02"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Log4j-01"/>
-			<item value="C:\Users\nalab\eclipse-workspace\03Spring-Web-MVC-1\03Spring-Web-MVC-1"/>
-			<item value="C:\Users\nalab\eclipse-workspace\02Spring-Web-MVC\02Spring-Web-MVC"/>
-			<item value="C:\Users\nalab\eclipse-workspace\01-SpringWebMVC"/>
-			<item value="C:\Users\nalab\eclipse-workspace\01-SpringWebMVC\01-SpringWebMVC"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
