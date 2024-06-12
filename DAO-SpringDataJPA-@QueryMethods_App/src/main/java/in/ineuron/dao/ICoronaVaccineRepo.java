@@ -19,6 +19,7 @@ public interface ICoronaVaccineRepo extends JpaRepository<CoronaVaccine, Long> {
 	@Query("From in.ineuron.bo.CoronaVaccine WHERE company=:vendor")
 	public List<CoronaVaccine> searchVaccinesByCompany(String vendor);
 	
+	
 	@Query("FROM CoronaVaccine WHERE company IN(:comp1,:comp2)")
 	public List<CoronaVaccine> searchVaccinesByComapnies(String comp1,String comp2);
 	
