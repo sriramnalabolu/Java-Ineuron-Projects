@@ -35,19 +35,20 @@ public class PostController
         return repo.findAll();
     }
     
-	/*
-	 * // posts/java
-	 * 
-	 * @GetMapping("/posts/{text}")
-	 * 
-	 * @CrossOrigin public List<Post> search(@PathVariable String text) { return
-	 * srepo.findByText(text); }
-	 * 
-	 * @PostMapping("/post")
-	 * 
-	 * @CrossOrigin public Post addPost(@RequestBody Post post) { return
-	 * repo.save(post); }
-	 */
+    // posts/java
+    @GetMapping("/posts/{text}")
+    @CrossOrigin
+    public List<Post> search(@PathVariable String text)
+    {
+        return srepo.findByText(text);
+    }
+
+    @PostMapping("/post")
+    @CrossOrigin
+    public Post addPost(@RequestBody Post post)
+    {
+        return repo.save(post);
+    }
 
 
 }
