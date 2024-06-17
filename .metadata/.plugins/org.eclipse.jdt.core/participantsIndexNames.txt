@@ -9,8 +9,12 @@ C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \03Spring-Web-MVC-1\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3478413602.index
 \WishWebModule\src\main\java
+C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1393216625.index
+\BootMVCProj1-DisplayingHomePage\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2709144811.index
 \02Spring-Web-MVC\src\main\java
+C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\937168224.index
+\BootMVCProj1-DisplayingHomePage\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4152666180.index
 \01-SpringWebMVC\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2872347437.index
