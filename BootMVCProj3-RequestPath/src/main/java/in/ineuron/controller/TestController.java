@@ -5,16 +5,36 @@ import java.util.Map;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+//@RequestMapping(value="/test")
 
 @Controller
-@RequestMapping(value="/test")
 public class TestController {
 
-	@GetMapping(value="/report")
-	public String showReport(Map<String, Object> model) {
-		System.out.println("TestController.showReport()");
-		return "display";
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String showHome() {
+		return "home";
 	}
+	
+	@RequestMapping(value = "/report", method = RequestMethod.POST)
+    public String showReport(Map<String, Object> model) {
+        System.out.println("TestController.showReport()");
+        return "display";
+    }
+
+    @RequestMapping(value = "/report", method = RequestMethod.GET)
+    public String showReport1(Map<String, Object> model) {
+        System.out.println("TestController.showReport1()");
+        return "display1";
+    }
+    
+    
+    /*
+	 * @GetMapping(value="/report") public String showReport(Map<String, Object>
+	 * model) { System.out.println("TestController.showReport()"); return "display";
+	 * }
+	 */
 	
 	/*
 	 * @RequestMapping public String showHome() { return "home"; }

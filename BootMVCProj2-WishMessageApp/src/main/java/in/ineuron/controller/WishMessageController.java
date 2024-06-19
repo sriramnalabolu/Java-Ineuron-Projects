@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,29 +24,29 @@ public class WishMessageController {
 	}
 
 	@RequestMapping(value = "/wish", method = RequestMethod.GET)
-	public ModelAndView showWishMessage() {
+	public String showWishMessage(Map<String, Object> model) {
+	    System.out.println("Implementation class name is :: " + model.getClass().getName());
 	    String msg = service.generateWishMessage();
-	    ModelAndView mav = new ModelAndView();
-	    mav.addObject("msg", msg);
-	    mav.setViewName("display");
-	    return mav;
+	    model.put("msg", msg);
+	    return "display";
 	}
 
 
+	
+	
 	/*
 	 * @RequestMapping(value = "/wish", method = RequestMethod.GET) public String
 	 * showWishMessage(Model model) {
-	 * System.out.println("Implemenation class name is :: " +
+	 * System.out.println("Implementation class name is :: " +
 	 * model.getClass().getName()); String msg = service.generateWishMessage();
 	 * model.addAttribute("msg", msg); return "display"; }
 	 */
-
+	
 	/*
-	 * @RequestMapping(value = "/wish", method = RequestMethod.GET) public String
-	 * showWishMessage(Map<String,Object> model) {
-	 * System.out.println("Implemenation class name is :: " +
-	 * model.getClass().getName()); String msg = service.generateWishMessage();
-	 * model.put("msg", msg); return "display"; }
+	 * @RequestMapping(value = "/wish", method = RequestMethod.GET) public
+	 * ModelAndView showWishMessage() { String msg = service.generateWishMessage();
+	 * ModelAndView mav = new ModelAndView(); mav.addObject("msg", msg);
+	 * mav.setViewName("display"); return mav; }
 	 */
 
 	/*

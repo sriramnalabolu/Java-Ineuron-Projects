@@ -7,5 +7,6 @@
 <title>Home Page</title>
 </head>
 <body>
+    <h1 style='color:red; text-align: center;'>FROM DISPLAY.JSP(/report/POST)</h1>
 </body>
 </html>
