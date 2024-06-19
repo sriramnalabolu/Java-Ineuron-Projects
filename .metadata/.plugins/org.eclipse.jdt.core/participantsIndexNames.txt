@@ -21,6 +21,8 @@ C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \06-SpringWebMVC\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3486838995.index
 \05-SpringWebMVC\src\main\java
+C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\326171159.index
+\BootMVCProj2-WishMessageApp\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1044668344.index
 \07-SpringWebMVC\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3941195747.index
