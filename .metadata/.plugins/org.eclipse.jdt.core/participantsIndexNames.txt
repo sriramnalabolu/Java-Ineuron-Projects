@@ -1,6 +1,8 @@
 INDEX VERSION 1.134
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2039117910.index
 \ServletJSPJDBCApp\src\main\java
+C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2695458092.index
+\BootMVCProj4-DataRendering\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2343391388.index
 \MavenWebApp\src\main\java
 C:\Users\nalab\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1393216625.index
