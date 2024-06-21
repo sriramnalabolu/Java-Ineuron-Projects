@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Thymeleaf Interactive Tutorial</title>
+        <link rel="stylesheet" href="../../css/main-static.css" th:href="@{/css/main.css}" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <img src="../../images/thymeleaflogonameverysmall.png" th:src="@{/images/thymeleaflogonameverysmall.png}"/>
+            <h1>The Thymeleaf Interactive Tutorial</h1>
+            <p id="intro">
+                Welcome to the Thymeleaf Interactive Tutorial. Thymeleaf version used in this tutorial is
+                <span th:text="${thymeleafVersion}">1.0.0</span>.
+            </p>
+        </header>
+        <div id="leftcol">
+            <h2>Description</h2>
+            <ul>
+                <li>
+                    This tutorial will guide you through the most important aspects of the Thymeleaf <i>Standard Dialects</i>.
+                </li>
+                <li>
+                    Reading the
+                    <a href="http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html">5-minute introduction to Thymeleaf</a>
+                    before starting this interactive tutorial is recommended.
+                </li>
+                <li>
+                    At the beginning of each exercise a link to the relevant chapter of the
+                    <a href="http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html"
+                       title="Open Thymeleaf manual">Using Thymeleaf</a> manual will be provided.
+                    Usually that section of the manual will contain all the information you will need
+                    to complete the exercise.
+                </li>
+                <li>
+                    In each exercise you will be asked to complete some task editing the provided source code. <br />
+                    As you type into the online editor, three views will be shown:
+                    <ol>
+                        <li>
+                            <b>Generated sources</b>: this is the HTML code that your server will produce when the template 
+                            is processed.
+                        </li>
+                        <li>
+                            <b>Static view</b>: this is how you would see the template if you open it as a static file 
+                            directly with a browser. This is what we called <i>Natural templating</i>, which allows
+                            static prototyping of web pages.
+                        </li>
+                        <li>
+                            <b>Dynamic view</b>: this is the result served by your application server, it is what your
+                            users see.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    The application uses modern JavaScript and CSS so a modern browser is required.
+                    A big screen is also recommended.
+                </li>
+            </ul>
+            <h2>About</h2>
+            <div th:replace="about.html :: main-content"></div>
+        </div>
+        <div id="rightcol">
+            <h2>Table of contents</h2>
+            <h3>Basic exercises</h3>
+            <ul>
+                <li th:each="exercise : ${basicExercises}">
+                    <a href="exercise.html"
+                       th:href="@{/exercise/__${exercise.index}__}"
+                       th:text="${exercise.description}">Exercise 1: bean values</a>
+                    <b th:if="${exerciseStat.index == 0}">&larr; Start here!</b>
+                </li>
+            </ul>
+            <h3>New in Thymeleaf 2.1</h3>
+            <ul>
+                <li th:each="exercise : ${twoDotOneExercises}">
+                    <a href="exercise.html"
+                       th:href="@{/exercise/__${exercise.index}__}"
+                       th:text="${exercise.description}">Exercise 1: bean values</a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <h3 class="footer">Copyright &copy; 2015 The Thymeleaf Team</h3>
+        </footer>
+    </body>
+</html>
