@@ -3155,3 +3155,183 @@ java.lang.NoSuchMethodError: 'org.eclipse.core.resources.IProject org.eclipse.m2
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-21 09:45:58.799
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-06-21 11:16:23.715
+!MESSAGE An internal error occurred during: "Importing Maven projects".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.eclipse.core.resources.IProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getProject()'
+	at org.jboss.tools.maven.jdt.configurators.EndorsedLibProjectConfigurator.configureRawClasspath(EndorsedLibProjectConfigurator.java:113)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.invokeJavaProjectConfigurators(AbstractJavaProjectConfigurator.java:221)
+	at org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator.configure(AbstractJavaProjectConfigurator.java:179)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:503)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:497)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:278)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$1(ProjectConfigurationManager.java:165)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:138)
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob$1.doCreateMavenProjects(ImportMavenProjectsJob.java:71)
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:56)
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob.runInWorkspace(ImportMavenProjectsJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-21 11:18:58.195
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 2 2 2024-06-21 11:19:43.451
+!MESSAGE Invalid preference category path: org.springframework.tooling.boot.xml.ls.preferences (bundle: org.springframework.ide.eclipse.xml.namespaces, page: org.springframework.ide.eclipse.beans.ui.namespaces.preferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2024-06-21 11:19:43.452
+!MESSAGE Invalid preference category path: org.springsource.ide.eclipse.commons.preferencePage (bundle: org.springframework.ide.eclipse.boot, page: org.springframework.ide.eclipse.boot.ui.preferences.BootPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2024-06-21 11:19:43.452
+!MESSAGE Invalid preference category path: org.springsource.ide.eclipse.commons.preferencePage (bundle: org.springframework.ide.eclipse.boot, page: org.springframework.ide.eclipse.boot.ui.preferences.InitializrPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2024-06-21 11:19:43.452
+!MESSAGE Invalid preference category path: org.springframework.tooling.boot.validation (bundle: org.springframework.ide.eclipse.boot.validation, page: org.springframework.ide.eclipse.boot.validation.preferences.ConfigurationProcessingPreferencesPage)
+
+!ENTRY org.eclipse.ui 2 2 2024-06-21 11:19:43.453
+!MESSAGE Invalid preference category path: org.springsource.ide.eclipse.commons.preferencePage (bundle: org.springframework.ide.eclipse.boot.dash, page: org.springframework.ide.eclipse.boot.dash.prefs.BootDashPrefsPage)
+
+!ENTRY Activator 4 0 2024-06-21 12:30:50.924
+!MESSAGE DebugException: Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.clearTestJarWorkspaceProjectFiles(TestJarLaunchListener.java:61)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesTerminated(TestJarLaunchListener.java:197)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:644)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1263)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1297)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2024-06-21 12:30:50.927
+!MESSAGE Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-06-21 12:30:51.431
+!MESSAGE Error logged from Debug UI: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.debug.internal.ui.DefaultLabelProvider.getImageKey(DefaultLabelProvider.java:172)
+	at org.eclipse.debug.internal.ui.DefaultLabelProvider.getImage(DefaultLabelProvider.java:73)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getDefaultImage(DelegatingModelPresentation.java:186)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:144)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:80)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:287)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:199)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2024-06-21 12:30:51.431
+!MESSAGE Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-06-21 12:30:51.433
+!MESSAGE Error logged from Debug UI: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.debug.internal.ui.DefaultLabelProvider.getImageKey(DefaultLabelProvider.java:172)
+	at org.eclipse.debug.internal.ui.DefaultLabelProvider.getImage(DefaultLabelProvider.java:73)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getDefaultImage(DelegatingModelPresentation.java:186)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:144)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:73)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:80)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:287)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:199)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2024-06-21 12:30:51.433
+!MESSAGE Launch configuration BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf - BootMvcProj8MvcCrmCrudappApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/BootMVCProj9-MVC-CRM-CRUDAPP-thymleaf%20-%20BootMvcProj8MvcCrmCrudappApplication.launch does not exist.
+
+!ENTRY org.eclipse.debug.core 4 2 2024-06-21 12:30:52.465
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getType()" because "configuration" is null
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.clearTestJarWorkspaceProjectFiles(TestJarLaunchListener.java:61)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesTerminated(TestJarLaunchListener.java:197)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:644)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1263)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1297)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2024-06-21 12:30:52.467
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getType()" because "configuration" is null
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.clearTestJarWorkspaceProjectFiles(TestJarLaunchListener.java:61)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesTerminated(TestJarLaunchListener.java:197)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:644)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1263)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1297)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
