@@ -3434,3 +3434,27 @@ java.lang.NoSuchMethodError: 'org.eclipse.core.resources.IProject org.eclipse.m2
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-24 18:49:22.728
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY Activator 4 0 2024-06-24 22:18:24.928
+!MESSAGE DebugException: Launch configuration SpringRest-01-SimplePOC - SpringRest01SimplePocApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringRest-01-SimplePOC%20-%20SpringRest01SimplePocApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration SpringRest-01-SimplePOC - SpringRest01SimplePocApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringRest-01-SimplePOC%20-%20SpringRest01SimplePocApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.clearTestJarWorkspaceProjectFiles(TestJarLaunchListener.java:61)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesTerminated(TestJarLaunchListener.java:197)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:931)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:644)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1263)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1297)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2024-06-24 22:18:24.929
+!MESSAGE Launch configuration SpringRest-01-SimplePOC - SpringRest01SimplePocApplication at file:/C:/Users/nalab/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringRest-01-SimplePOC%20-%20SpringRest01SimplePocApplication.launch does not exist.
