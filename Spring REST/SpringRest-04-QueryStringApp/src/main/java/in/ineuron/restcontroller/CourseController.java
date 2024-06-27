@@ -26,6 +26,7 @@ public class CourseController {
 		return entity;
 	}
 	
+	
 	@GetMapping("/info/{id}/JRTP/{name}") // course/info/5/JRTP/navinreddy
 	public ResponseEntity<String> getCourseDetails(
 			@PathVariable String id,
