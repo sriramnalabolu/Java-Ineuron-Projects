@@ -32,20 +32,17 @@ public class TouristMgmtServiceImpl implements ITouristMgmtService {
 	@Override
 	public Tourist fetchTouristById(Integer id) {
 		
-		Optional<Tourist> optional = repo.findById(id); 
-		if (optional.isPresent()) {
-			return optional.get(); 
-		} else { 
-			throw new TouristNotFoundException(" tourist with id "+id+" not found");
-		}
+		return repo.findById(id).orElseThrow(() -> new TouristNotFoundException("tourist with id :: " + id + " not found"));
+
+		/*
+		 * Optional<Tourist> optional = repo.findById(id); if (optional.isPresent()) {
+		 * return optional.get(); } else { throw new
+		 * TouristNotFoundException(" tourist with id "+id+" not found"); }
+		 */
+
 	}
 	
-	 
-// }
-//	return repo.findById(id)
-//	.orElseThrow(() -> new TouristNotFoundException("tourist with id :: " + id + " not found"));
 
-	
 	@Override
 	public String updateTouristByDetails(Tourist tourist) {
 
@@ -73,7 +70,7 @@ public class TouristMgmtServiceImpl implements ITouristMgmtService {
 		}
 
 	}
-
+	
 	@Override
 	public String deleteTouristById(Integer id) {
 		Optional<Tourist> optional = repo.findById(id);

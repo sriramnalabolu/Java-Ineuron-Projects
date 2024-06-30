@@ -57,6 +57,7 @@ public class TouristController {
 		}
 	}
 
+	
 	@PutMapping("/modify")
 	public ResponseEntity<String> modifytourist(@RequestBody Tourist tourist) {
 		try {
@@ -88,3 +89,4 @@ public class TouristController {
 		}
 	}
 }
+
