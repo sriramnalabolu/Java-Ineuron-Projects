@@ -19,22 +19,17 @@ public class ActorOperationsController {
 
 	@GetMapping("/wish")
 	public ResponseEntity<String> displayWishMessage() {
-
-		LocalDateTime ldt = LocalDateTime.now();
-		int hour = ldt.getHour();
-		String user = "sachin";
-
-		String body = null;
-		if (hour < 12)
-			body = "Good Morning:: " + user;
-		else if (hour < 16)
-			body = "Good Afternoon :: " + user;
-		else if (hour < 20)
-			body = "Good Evening:: " + user;
-		else
-			body = "Good Night:: " + user;
-
-		return new ResponseEntity<String>(body, HttpStatus.OK);
+		return new ResponseEntity<String>("Got it", HttpStatus.OK);
+		/*
+		 * LocalDateTime ldt = LocalDateTime.now(); int hour = ldt.getHour(); String
+		 * user = "sachin";
+		 * 
+		 * String body = null; if (hour < 12) body = "Good Morning:: " + user; else if
+		 * (hour < 16) body = "Good Afternoon :: " + user; else if (hour < 20) body =
+		 * "Good Evening:: " + user; else body = "Good Night:: " + user;
+		 * 
+		 * return new ResponseEntity<String>(body, HttpStatus.OK);
+		 */
 	}
 
 	@GetMapping("/wish/{id}/{name}")

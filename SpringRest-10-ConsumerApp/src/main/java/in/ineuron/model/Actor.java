@@ -6,9 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-
 @AllArgsConstructor
-
 @NoArgsConstructor
 public class Actor {
 	private Integer aid;
@@ -16,3 +14,4 @@ public class Actor {
 	private Float age;
 	private String type;
 }
+

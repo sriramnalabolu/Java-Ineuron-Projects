@@ -2,6 +2,7 @@
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:Log4j-01"/>
   <module moduleId="org.eclipse.jst.jee.server:ServletJspHibernateMVCCrudApp" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SpringRest-09-ProviderApp" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:HtmlJspDBApp" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:MavenWebApp" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>
