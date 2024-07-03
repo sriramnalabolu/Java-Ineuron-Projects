@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+
 @Component
 public class ActorServiceConsumingRunner_PostingJsonData implements CommandLineRunner {
 
@@ -19,7 +20,7 @@ public class ActorServiceConsumingRunner_PostingJsonData implements CommandLineR
 		System.out.println("ActorServiceConsumingRunner_PostingJsonData.run()");
 
 		RestTemplate template = new RestTemplate();
-		String serviceUrl = "http://localhost:8888/SpringRest-09-ProviderApp/api/actor/register";
+		String serviceUrl = "http://localhost:9999/api/actor/register";
 
 		// Sending the information to @RequestBody(JSON data)
 		HttpHeaders headers = new HttpHeaders();

@@ -9,12 +9,12 @@ import in.ineuron.response.CurrencyResponse;
 @Service("service")
 public class CurrencyService {
 
-	private static final String REST_END_POINT = "http://localhost:8888/SpringRest-CurrencyConverter-Providerapp/api/currency/getCurrencyExchangeCost/from/USD/to/INR";
+	private static final String REST_END_POINT = "http://localhost:8888/api/currency/getCurrencyExchangeCost/from/USD/to/INR";
 
 	public void invokeRestApiSync(String from, String to) {
 		// Sending Synchronous request
 		WebClient webClient = WebClient.create();
-		System.out.println("***Synchronous: Rescall started ******");
+		System.out.println("***Synchronous: Restcall started ******");
 		CurrencyResponse response = webClient.
 				get().
 				uri(REST_END_POINT, from, to).
@@ -29,7 +29,7 @@ public class CurrencyService {
 
 	public void invokeRestApiASync(String from, String to) {
 
-		// Sending Synchronous request
+		// Sending ASynchronous request
 		WebClient webClient = WebClient.create();
 		System.out.println("***ASynchronous: Restcall started ******");
 		webClient.

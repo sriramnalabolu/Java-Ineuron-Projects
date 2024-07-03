@@ -14,7 +14,7 @@ public class ActorServiceConsumingRunner implements CommandLineRunner {
 		System.out.println("ActorServiceConsumingRunner.run()");
 
 		RestTemplate template = new RestTemplate();
-		String serviceUrl = "http://localhost:8888/SpringRest-09-ProviderApp/api/actor/wish";
+		String serviceUrl = "http://localhost:9999/api/actor/wish";
 
 		ResponseEntity<String> responseEntity = template.exchange(
 														serviceUrl, 

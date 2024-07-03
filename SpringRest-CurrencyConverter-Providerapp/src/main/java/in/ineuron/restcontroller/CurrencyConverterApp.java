@@ -24,3 +24,4 @@ public class CurrencyConverterApp {
 		return new ResponseEntity<CurrencyResponse>(response, HttpStatus.OK);
 	}
 }
+

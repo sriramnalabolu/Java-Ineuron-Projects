@@ -2,6 +2,7 @@
 package in.ineuron.runner;
 
 import org.springframework.boot.CommandLineRunner;
+
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -18,7 +19,7 @@ public class ActorServiceConsumingRunner_GettingJsonData implements CommandLineR
 		System.out.println("ActorServiceConsumingRunner_pathVariable.run()");
 
 		RestTemplate template = new RestTemplate();
-		String serviceUrl = "http://localhost:8888/SpringRest-09-ProviderApp/api/actor/find/{id}";
+		String serviceUrl = "http://localhost:9999/api/actor/find/{id}";
 
 		
 		ResponseEntity<Actor> responseEntity = template.exchange(
