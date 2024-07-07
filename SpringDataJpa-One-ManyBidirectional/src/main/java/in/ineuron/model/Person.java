@@ -13,17 +13,23 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "OTM_PERSON")
 @RequiredArgsConstructor
 public class Person {
+	
+	Person(){
+		System.out.println("Person 0 param constructor :: ");
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
