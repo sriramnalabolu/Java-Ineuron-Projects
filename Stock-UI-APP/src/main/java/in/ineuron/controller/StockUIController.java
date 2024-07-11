@@ -27,7 +27,6 @@ public class StockUIController {
 
 		String companyName = request.getParameter("companyName");
 		String quantity = request.getParameter("quantity");
-
 		String response = service.getTotalStockPrice(companyName, Integer.parseInt(quantity));
 		model.addAttribute("msg", response);
 		return "index";
