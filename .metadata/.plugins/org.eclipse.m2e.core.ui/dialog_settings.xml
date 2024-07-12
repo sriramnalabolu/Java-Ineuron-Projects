@@ -91,21 +91,21 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\nalab\eclipse-workspace\Stock-Actuators-App"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Stock-API-Gateway"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Stock-UI-APP"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Stock-Calcuation"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Service-Registery-Eurekha-Server"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Stock-Service"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Eureka-Client-Hello-Service"/>
+			<item value="C:\Users\nalab\eclipse-workspace\Eureka-Client-Hi-Service"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SpringDataJpa-One-ManyBidirectional"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SpringDataJpa-MultipleDbConfiguration"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootMVCPro6-DataBindingAppUsingSpringTagLibrary"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootMVCPro5-DataBindingAppUsingHTMLForms"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootMVCProj4-DataRendering"/>
 			<item value="C:\Users\nalab\eclipse-workspace\BootMVCProj3-RequestPath"/>
 			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-DateTimeInsertionAPI"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp-dynamicprojection"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-StoredProcedureApp"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp-staticprojection"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-JpaRepositor"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CustomQueryApp"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-PagingAndSortingRepository"/>
-			<item value="C:\Users\nalab\eclipse-workspace\DAO-SpringDataJPA-CRUDRepository"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Boot-logging-using-SL4J-Log4j2"/>
-			<item value="C:\Users\nalab\eclipse-workspace\Boot-logging-using-Log4j"/>
-			<item value="C:\Users\nalab\eclipse-workspace\07-SpringWebMVC"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
