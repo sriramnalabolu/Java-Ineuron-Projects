@@ -1,0 +1,9 @@
+demo:
+  properties:
+    greetMsg: Hi, good Morning
+    testMsg: This is a test message
+    welcomeMsg: Welcome to iNeuron
+server:
+  port: 9999
+
+ 
