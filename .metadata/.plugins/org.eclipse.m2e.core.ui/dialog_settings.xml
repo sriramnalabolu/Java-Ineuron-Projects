@@ -91,6 +91,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\nalab\eclipse-workspace\SB-mono-flux-App"/>
+			<item value="C:\Users\nalab\eclipse-workspace\SB-apache-kafka-app"/>
 			<item value="C:\Users\nalab\eclipse-workspace\SB-Redis-Cache-App"/>
 			<item value="C:\Users\nalab\eclipse-workspace\SB-Sleuth-Zipkin-App"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Ribbon-currency-exchange-api"/>
@@ -104,8 +106,6 @@
 			<item value="C:\Users\nalab\eclipse-workspace\Stock-Service"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Eureka-Client-Hello-Service"/>
 			<item value="C:\Users\nalab\eclipse-workspace\Eureka-Client-Hi-Service"/>
-			<item value="C:\Users\nalab\eclipse-workspace\SpringDataJpa-One-ManyBidirectional"/>
-			<item value="C:\Users\nalab\eclipse-workspace\SpringDataJpa-MultipleDbConfiguration"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
